@@ -1,7 +1,7 @@
-field,type,description,units,notes
-corregimie,string,Name of the corregimiento,N/A,Source: IGNTG boundaries
-fecha,date,Year-month of observation (YYYY-MM-01),N/A,Represents the first day of the month for indexing
-spi_1,float,Standardized Precipitation Index (1-month),dimensionless,Values typically between -3 and +3; positive=wet, negative=dry
-ndvi_anom,float,NDVI anomaly,z-score,Clamped to [-1,1] to reduce extreme outliers
-vci,float,Vegetation Condition Index,percent,Calculated from NDVI min/max over baseline; range 0–100
-geometry,multipolygon,Geographic boundary of the corregimiento,N/A,PostGIS geometry column
+field,type,description,units
+corregimie,string,Name of the corregimiento,N/A
+fecha,date,Year-month of observation (YYYY-MM-01),N/A
+spi_1,float,Standardized Precipitation Index (1-month),dimensionless
+ndvi_anom,float,NDVI anomaly,z-score
+vci,float,Vegetation Condition Index,percent
+geometry,multipolygon,Geographic boundary of the corregimiento,N/A
