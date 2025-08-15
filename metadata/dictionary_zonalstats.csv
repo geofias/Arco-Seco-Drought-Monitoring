@@ -1,7 +1,0 @@
-field,type,description,units
-corregimie,string,Name of the corregimiento,N/A
-fecha,date,Year-month of observation (YYYY-MM-01),N/A
-spi_1,float,Standardized Precipitation Index (1-month),dimensionless
-ndvi_anom,float,NDVI anomaly,z-score
-vci,float,Vegetation Condition Index,percent
-geometry,multipolygon,Geographic boundary of the corregimiento,N/A
