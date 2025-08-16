@@ -1,19 +1,21 @@
-# Drought Monitoring in Panamá’s Arco Seco (Cocle) — Multi-Index Analysis (2013–2025)
+# Drought Monitoring in Panamá’s Arco Seco (Coclé) — Multi-Index Analysis (2013–2025)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](#license)
 ![Status](https://img.shields.io/badge/Status-Completed-blue)
 ![Made with: ArcGIS | PostGIS | Power BI](https://img.shields.io/badge/Tools-ArcGIS%20%7C%20PostGIS%20%7C%20Power%20BI-informational)
 
-**Objective.** Build an operational pipeline to monitor drought and vegetation condition at **corregimiento** level in **Cocle, Panama**, using **NDVI anomaly** (MODIS), **VCI**, and **SPI-1** (CHIRPS) with reproducible GIS/DB/BI steps.
+**Objective.** Analyze drought dynamics in the Arco Seco region of Panama by integrating satellite-derived indicators — NDVI anomaly, Vegetation Condition Index (VCI), and Standardized Precipitation Index (SPI-1). Using zonal statistics at the corregimiento level, the project provides insights into vegetation stress, precipitation variability, and overall drought conditions, supporting better decision-making for agricultural and environmental management in Coclé Province.
 
-![Cocle Highlight Shadows](reports/images/panama_cocle_highlight_shadows.png)
+![Cocle Highlight Shadows](reports/images/panama_cocle_highlight.png)
 
 ---
 
 ## Overview
 
-- **Study area:** Cocle Province (Panama)  
-- **Period:** 2013–2025; 2023–2025 for SPI-1, NDVI anomaly & VCI dashboards  
+- **Study area:** Coclé Province (Panama)  
+- **Period:**
+  - **Historical Data:** 2013–2022 (used to calculate baselines and reference values)
+  - **Dashboard Results:** 2023–2025 (SPI-1, NDVI Anomaly, and VCI visualizations based on the historical baseline)  
 - **Spatial unit:** Corregimientos (53)  
 - **Indicators:**
   - **NDVI anomaly:** Current NDVI vs historical baseline (2013–2022)
@@ -28,7 +30,7 @@ This repo includes **scripts**, **schema**, and **images** of the **Power BI** d
 
 - `data/` — metadata, sample rasters, and demo `zonalstats` subset  
 - `code/` — ArcGIS geoprocessing scripts, PostGIS SQL, and Power BI DAX notes  
-- `reports/` — infographic (16:9), dashboard screenshots, Panama map highlighting Coclé  
+- `reports/` — infographic, dashboard screenshots, Panama map highlighting Coclé  
 
 ---
 
@@ -50,7 +52,17 @@ This repo includes **scripts**, **schema**, and **images** of the **Power BI** d
    - Power BI model with measures:
      - **Color hex** and **labels** for SPI/NDVI/VCI
      - **Composite index** + label for the overview page
-   - Pages: SPI, NDVI anomaly, VCI, and **front page** integration.
+   - Pages: **Front page** integration, SPI, NDVI anomaly, and VCI.
+
+<p align="center">
+  <img src="reports/images/dashboard_frontpage.jpg" width="45%" />
+  <img src="reports/images/dashboard_spi_page.jpg" width="45%" />
+</p>
+<p align="center">
+  <img src="reports/images/dashboard_ndvi_page.jpg" width="45%" />
+  <img src="reports/images/dashboard_vci_page.jpg" width="45%" />
+</p>
+
 
 ---
 
@@ -77,24 +89,9 @@ See `data/metadata/dictionary_zonalstats.csv` for full details.
 - **SPI page:** `dashboard_spi_page.png`  
 - **NDVI anomaly page:** `dashboard_ndvi_page.png`  
 - **VCI page:** `dashboard_vci_page.png`  
-- **Panamá (Coclé highlighted):** `panama_cocle_highlight.png`
-
-<details>
-<summary>Preview</summary>
+- **Panama (Coclé highlighted):** `panama_cocle_highlight.png`
 
 ![Infographic overview](reports/images/infographic_16x9.png "Infographic: objectives, data, methods, and findings")
-
-</details>
-
----
-
-## Reproducibility (scripts)
-
-- **ArcGIS** (`code/arcgis/`): clipping, resampling, zonal statistics.
-- **PostGIS** (`code/postgis/`): schema, loading, geometry join per month.
-- **Power BI** (`code/powerbi/dax_measures.md`): SPI/NDVI/VCI color hex, labels, composite index.
-
-> Note: Large rasters are not tracked here. Use the sample files in `data/samples/`.
 
 ---
 
@@ -104,9 +101,9 @@ If you reference this repository:
 
 ```bibtex
 @misc{tamir_arco_seco_2025,
-  title   = {Drought Monitoring in Panamá’s Arco Seco (Cocle) — Multi-Index Analysis (2013–2025)},
+  title   = {Drought Monitoring in Panama’s Arco Seco (Coclé) — Multi-Index Analysis (2013–2025)},
   author  = {Tamir, Chong},
   year    = {2025},
-  url     = {https://github.com/<your-user>/arco-seco-drought-monitoring}
+  url     = {https://github.com/geofias/arco-seco-drought-monitoring}
 }
 ```
