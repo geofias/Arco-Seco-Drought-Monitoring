@@ -6,6 +6,8 @@
 
 **Objective.** Build an operational pipeline to monitor drought and vegetation condition at **corregimiento** level in **Cocle, Panama**, using **NDVI anomaly** (MODIS), **VCI**, and **SPI-1** (CHIRPS) with reproducible GIS/DB/BI steps.
 
+![Cocle Highlight Shadows](reports/images/panama_cocle_highlight_shadows.png)
+
 ---
 
 ## Overview
