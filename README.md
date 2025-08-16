@@ -63,6 +63,9 @@ This repo includes **scripts**, **schema**, and **images** of the **Power BI** d
   <img src="reports/images/dashboard_vci_page.jpg" width="45%" />
 </p>
 
+<p align="center">
+  <em>See the full PDF dashboard <a href="reports/powerbi/Drought_Report_PDF.pdf">here</a></em>
+</p>
 
 ---
 
