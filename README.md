@@ -1,4 +1,4 @@
-# Drought Monitoring in Panamá’s Arco Seco (Coclé) — Multi-Index Analysis (2013–2025)
+# Drought Monitoring in Panama’s Arco Seco (Coclé) — Multi-Index Analysis (2013–2025)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](#license)
 ![Status](https://img.shields.io/badge/Status-Completed-blue)
